@@ -62,6 +62,7 @@ nav {
 .nav__row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav__logo {
@@ -94,16 +95,24 @@ nav {
 .nav__link {
     display: flex;
     align-items: center;
-    font-size: 10px;
+    font-size: 14px;
+    font-weight: 600;
     text-decoration: none;
     margin: 8px;
+    position: relative;
+}
+
+.login {
+    margin-left: 48px;
 }
 
 .nav__link--su {
     background-color: #6415ff;
     color: white;
-    padding: 4px 10px;
-    border-radius: 12px  ;
+    padding: 10px 32px;
+    border-radius: 9999px  ;
+    margin-top: 2px;
+    width: auto;
 }
 
 .btn__menu {
@@ -251,6 +260,47 @@ FEATURES ↓
     align-items: center;
 }
 
+.row__narrow {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.feature {
+    width: calc(100% / 3)
+}
+
+.feature__row {
+    display: flex;
+    align-items: flex-start;
+    padding: 32px 24px;
+}
+
+.feature__icon--wrapper {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+}
+.feature__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.feature__desc--para {
+    margin-top: 16px;
+    font-size: 16px;
+    max-width: calc(634px / 3);
+    color: rgb(124, 139, 161);
+    line-height: 2;
+    font-weight: 500;    
+}
 
 /* 
 
@@ -265,6 +315,10 @@ QUALITY WORK ↓
     align-items: center;
 }
 
+.quality__description {
+    max-width: 576px;
+    margin-right: 64px;
+}
 
 /* 
 
@@ -279,7 +333,16 @@ STEPS ↓
     align-items: center;
 }
 
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 32px;
+}
 
+.step__direction {
+    display: flex;
+    flex-direction: column;
+}
 /* 
 
 VALUES ↓
@@ -292,6 +355,18 @@ VALUES ↓
     align-items: center;
 }
 
+.values__desc--items{
+    display: flex;
+}
+
+.values__desc--item--title{
+    display: flex;
+}
+
+.values__icon {
+    width: 24px;
+
+}
 
 /*
 
@@ -304,6 +379,10 @@ PRICING ↓
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.plans {
+    display: flex;
 }
 
 /* 
