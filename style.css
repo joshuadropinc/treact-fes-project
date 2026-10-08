@@ -88,18 +88,34 @@ nav {
 
 .nav__links {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    padding-bottom: 2px;;
 }
 
 .nav__link {
-    display: flex;
-    align-items: center;
     font-size: 14px;
     font-weight: 600;
-    text-decoration: none;
-    margin: 8px;
+    padding-top: 4px;
     position: relative;
+    border-bottom: 2px solid transparent;
+    margin: 0 24px;
+    transition: all 300ms;
+}
+
+.nav__link::after {
+    content: "";
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #6415ff;
+    transition: all 300ms ease;
+    opacity: 0;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
 }
 
 .login {
@@ -111,9 +127,20 @@ nav {
     color: white;
     padding: 10px 32px;
     border-radius: 9999px  ;
-    margin-top: 2px;
+    margin-top: 0px;
     width: auto;
+    transition: all 300ms ease;
 }
+.nav__link--su::after {
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+.nav__link--su:hover {
+    background-color: rgba(80, 17,204);
+}
+
 
 .btn__menu {
     content:"";
