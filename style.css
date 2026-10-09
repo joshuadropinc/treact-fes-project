@@ -411,11 +411,11 @@ QUALITY WORK ↓
     align-items: center;
 }
 
-.quality__description .quality__img--wrapper {
+.quality__description, .quality__img--wrapper {
     width: 50%;
 }
 
-#quality .section__title{
+#quality, .section__slogan{
     line-height: 1.25;
 }
 .quality__description {
@@ -463,15 +463,46 @@ STEPS ↓
     align-items: center;
 }
 
+.steps__img--wrapper, .steps__description--wrapper {
+    width: 50%;
+}
+
+.steps__description--wrapper{
+    padding: 32px 0 32px 64px;
+}
+
 .step {
     display: flex;
     align-items: flex-start;
     margin-top: 32px;
 }
 
+.step__number {
+    color:#cbd5e9;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+}
 .step__direction {
     display: flex;
     flex-direction: column;
+    max-width:  320px;
+    margin-left: 24px;
+}
+
+.step__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #243e63;
+    line-height: 1;
+}
+
+.step__para {
+    margin-top: 12px;
+    line-height: 2;
+    font-size: 14px;
+    color: #718096;
+    font-weight: 500;
 }
 /* 
 
