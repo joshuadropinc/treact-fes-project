@@ -28,7 +28,6 @@ body {
 
 .container {
     padding: 96px 0;
-    /* display: flex; */
 }
 
 .purple {
@@ -56,6 +55,22 @@ h1 {
 p {
     font-size: 18px;
     line-height: 1.5;
+}
+
+.section__title {
+    font-size: 16px;
+    color: #6415ff;
+    letter-spacing: 1.6px;
+    font-weight: 700;
+}
+
+.section__slogan {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(36, 62, 99);
+    line-height: 1.5;
+    margin: 16px 0;
+    letter-spacing: 0.025em;
 }
 /* 
 
@@ -330,6 +345,8 @@ FEATURES ↓
     max-width: 1024px;
     margin: 0 auto;
 }
+
+
 
 .features {
     display: flex;
