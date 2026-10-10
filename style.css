@@ -516,19 +516,72 @@ VALUES ↓
     align-items: center;
 }
 
-.values__desc--items{
+.values__description, .values__img {
+    width: 50%;
+}
+
+.values__description {
+    padding: 32px 64px 32px 0;
+}
+
+.values {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
+}
+
+.value {
+    margin-top: 32px;
+    margin-right: 32px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.value__title{
     display: flex;
 }
 
-.values__desc--item--title{
+.value:nth-child(1) .value__icon--wrapper {
+    background-color: #9ae6b4;
+}
+
+.value:nth-child(2) .value__icon--wrapper {
+    background-color: #feb2b2;
+}
+
+.value__icon--wrapper {
+    border-radius: 50%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
 }
 
-.values__icon {
-    width: 24px;
-
+.value__icon {
+    width: 20px;
+    height: 20px;
 }
 
+.value__name {
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #243e63;
+}
+
+.values__desc--para {
+    margin-top: 16px;
+    line-height: 1.625;
+    color: #718096;
+}
+
+#values .btn {
+    margin-top: 48px;
+}
 /*
 
 PRICING ↓
