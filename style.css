@@ -1086,6 +1086,14 @@ MOBILE RESPONSIVENESS ↓
         display: none;
     }
 
+    .section__slogan {
+        font-size: 36px;
+    }
+
+    .section__para {
+        font-size: 16px;
+    }
+
     /* HEADER */
 
     header .row {
@@ -1126,6 +1134,12 @@ MOBILE RESPONSIVENESS ↓
     footer {
         padding: 80px 32px;
     }
+
+    /* QUALITY  */
+    .quality__description {
+        margin-right: 0px;
+        padding-right: 48px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -1155,6 +1169,18 @@ MOBILE RESPONSIVENESS ↓
     .feature {
         width: auto;
         max-width: 384px;
+    }
+
+    /* QUALITY  */
+    .quality__description, .quality__img--wrapper {
+        width: 100%;
+        max-width: 448px;
+    }
+
+    .quality__description {
+        padding: 0;
+        margin-top: 64px;
+        text-align: center;
     }
 }
 
